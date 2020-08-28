@@ -20,7 +20,7 @@ public class JsonReader {
         this.objectMapper = objectMapper;
     }
 
-    public List<CurrentRate> getCurrencies(String json) {
+    public List<CurrentRate> getCurrentRateList(String json) {
         List<CurrentRateDto> currentRateDtoList = null;
         try {
             currentRateDtoList = Arrays.asList(objectMapper.readValue(json, CurrentRateDto[].class));

@@ -20,6 +20,6 @@ public class CurrentRateInfoServiceImpl implements CurrentRateInfoService {
     @Override
     public List<CurrentRate> getInfo(String apiUrl) {
         String result = restTemplate.getForObject(apiUrl, String.class);
-        return jsonReader.getCurrencies(result);
+        return jsonReader.getCurrentRateList(result);
     }
 }
