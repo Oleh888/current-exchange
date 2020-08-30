@@ -1,7 +1,7 @@
-package com.current.exchange.exchange.model;
+package com.current.exchange.model;
 
-import com.current.exchange.exchange.model.dto.CurrentRateDto;
-import com.current.exchange.exchange.model.mapper.CurrentRateMapper;
+import com.current.exchange.model.dto.CurrentRateDto;
+import com.current.exchange.model.mapper.CurrentRateMapper;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

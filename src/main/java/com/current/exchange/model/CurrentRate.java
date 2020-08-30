@@ -1,4 +1,4 @@
-package com.current.exchange.exchange.model;
+package com.current.exchange.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

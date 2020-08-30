@@ -1,4 +1,4 @@
-package com.current.exchange.exchange;
+package com.current.exchange;
 
 import org.springframework.stereotype.Component;
 import java.io.BufferedReader;

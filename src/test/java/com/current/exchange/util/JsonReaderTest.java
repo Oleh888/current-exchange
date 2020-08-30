@@ -1,7 +1,7 @@
-package com.current.exchange.exchange.util;
+package com.current.exchange.util;
 
-import com.current.exchange.exchange.model.CurrentRate;
-import com.current.exchange.exchange.model.mapper.CurrentRateMapper;
+import com.current.exchange.model.CurrentRate;
+import com.current.exchange.model.mapper.CurrentRateMapper;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Assert;
 import org.junit.Test;
