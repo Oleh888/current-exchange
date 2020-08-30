@@ -1,10 +1,10 @@
-package com.current.exchange.exchange.integration;
+package com.current.exchange.integration;
 
-import com.current.exchange.exchange.CurrentRateUtil;
-import com.current.exchange.exchange.controller.CurrentExchangeController;
-import com.current.exchange.exchange.model.CurrentRate;
-import com.current.exchange.exchange.service.CurrentRateInfoService;
-import com.current.exchange.exchange.util.JsonReader;
+import com.current.exchange.CurrentRateUtil;
+import com.current.exchange.controller.CurrentExchangeController;
+import com.current.exchange.model.CurrentRate;
+import com.current.exchange.service.CurrentRateInfoService;
+import com.current.exchange.util.JsonReader;
 import com.github.tomakehurst.wiremock.junit.WireMockClassRule;
 import org.assertj.core.api.Assertions;
 import org.junit.Assert;
@@ -12,6 +12,7 @@ import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.boot.test.web.client.TestRestTemplate;
@@ -25,6 +26,7 @@ import static org.mockito.internal.verification.VerificationModeFactory.times;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@AutoConfigureMockMvc
 public class CurrentRateGetInfoIntegrationTest {
     private static final String API_URI = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json";
 

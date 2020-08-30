@@ -1,4 +1,4 @@
-package com.current.exchange.exchange;
+package com.current.exchange;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

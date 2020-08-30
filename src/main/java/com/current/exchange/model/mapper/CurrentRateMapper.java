@@ -1,7 +1,7 @@
-package com.current.exchange.exchange.model.mapper;
+package com.current.exchange.model.mapper;
 
-import com.current.exchange.exchange.model.CurrentRate;
-import com.current.exchange.exchange.model.dto.CurrentRateDto;
+import com.current.exchange.model.CurrentRate;
+import com.current.exchange.model.dto.CurrentRateDto;
 import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.time.LocalDate;

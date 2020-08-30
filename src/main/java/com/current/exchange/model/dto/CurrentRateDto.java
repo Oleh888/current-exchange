@@ -1,4 +1,4 @@
-package com.current.exchange.exchange.model.dto;
+package com.current.exchange.model.dto;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.current.exchange.exchange;
+package com.current.exchange;
 
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.boot.SpringApplication;
