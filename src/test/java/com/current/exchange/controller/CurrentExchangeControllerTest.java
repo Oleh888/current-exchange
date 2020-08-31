@@ -17,11 +17,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@AutoConfigureMockMvc
+@AutoConfigureMockMvc(addFilters = false)
 public class CurrentExchangeControllerTest {
     private static final String BAD_URI = "https://bad-uri";
     private static final String BAD_ARGUMENT = "bad_arguments";
-    private static final String VALID_ARGUMENT = "Євро";
 
     @Autowired
     private MockMvc mockMvc;
@@ -33,7 +32,7 @@ public class CurrentExchangeControllerTest {
 
     @Test
     public void getInfoWithArgShouldReturnSuccess() throws Exception {
-        mockMvc.perform(get("/exchange/get-info/{VALID_ARGUMENT}", VALID_ARGUMENT)
+        mockMvc.perform(get("/exchange/get-info")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
